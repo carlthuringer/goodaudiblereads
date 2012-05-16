@@ -4,6 +4,8 @@ gem 'rails', '3.2.3'
 gem 'pg'
 gem 'thin'
 gem 'twitter-bootstrap-rails'
+gem 'haml-rails'
+gem 'lograge'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,9 +19,12 @@ end
 gem 'jquery-rails'
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails'
-  gem 'autotest'
+  gem 'autotest-rails'
+  gem 'autotest-growl'
   gem 'capybara'
+  gem 'database_cleaner'
 end
 
 # To use debugger
