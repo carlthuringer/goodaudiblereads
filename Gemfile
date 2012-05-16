@@ -6,6 +6,7 @@ gem 'thin'
 gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 gem 'lograge'
+gem 'google-analytics-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
