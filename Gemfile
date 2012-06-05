@@ -1,29 +1,34 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails'
 gem 'pg'
 gem 'thin'
 gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 gem 'lograge'
 gem 'google-analytics-rails'
+gem 'jquery-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-  gem 'libv8'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+  gem 'therubyracer'
 end
 
 gem 'jquery-rails'
 
 group :development, :test do
-  gem 'pry'
+  gem 'pry-rails'
+  gem 'growl'
+  gem 'guard-jasmine'
+  gem 'guard-rspec'
+  gem 'jasmine'
+  gem 'jasminerice'
   gem 'rspec-rails'
-  gem 'autotest-rails'
-  gem 'autotest-growl'
+
   gem 'capybara'
   gem 'database_cleaner'
 end
